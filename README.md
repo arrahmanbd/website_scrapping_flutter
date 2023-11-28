@@ -1,16 +1,52 @@
-# website_scrapping
 
-A new Flutter project.
+# Flutter Website Scraping
 
-## Getting Started
+Website scraping involves extracting data from websites and is subject to legal and ethical considerations. Ensure that you have the right to scrape data from the target website, and adhere to the terms of service.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Packages
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[Chaleno](https://pub.dev/packages/chaleno)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## Instruction
+
+Foundation of scraping 
+
+```bash
+final parser = await Chaleno().load('https://example.com');
+final title = parser?.getElementById('title').text;
+final contents = parser.querySelector('.content-card').text;
+final image = parser.getElementsByTagName('img').src;
+```
+
+| Methods                | Mean                                             |
+|------------------------|--------------------------------------------------|
+| title                  | Return the page title                            |
+| getElementById        | Return a single element searching for ID on the page |
+| getElementsByClassName | Return a list of elements according class passed as parameter |
+| getElementsByTagName   | Return a list of elements according to the tag passed as a parameter |
+| querySelector          | Return a single element passing a list of selectors |
+| querySelectorAll       | Return a list of elements passing a list of selectors |
+| text                   | Return text attribute from a tag returned         |
+| src                    | Return src attribute from a tag returned          |
+| href                   | Return href attribute from a tag returned         |
+
+## Screenshots
+
+![App Screenshot](screenshoot/screenshoot.jpg)
+
+
+## 🚀  Follow
+[![portfolio](https://img.shields.io/badge/bio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://arrahmanbd.github.io/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arrahmanbd)
+[![linkedin](https://img.shields.io/badge/Github-22272e?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/arrahmanbd)
+
+
+## Badges
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
