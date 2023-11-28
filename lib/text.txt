@@ -1,0 +1,18 @@
+// Return an element by id
+Result result = chaleno.getElementById('id');
+
+
+// Return list of element by class name
+List<Result> results = chaleno.getElementsByClassName('classname');
+
+
+// Return list of element by tag name
+List<Result> results = chaleno.getElementsByTagName('tag');
+
+
+// Return an element by query selector
+Result result = chaleno.querySelector('.class #id tag');
+
+
+// Similar to querySelector, querySelectorAll return list of element by query selector
+List<Result> results = chaleno.querySelectorAll('.class #id tag');
