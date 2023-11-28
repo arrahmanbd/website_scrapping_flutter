@@ -34,8 +34,8 @@ final image = parser.getElementsByTagName('img').src;
 | href                   | Return href attribute from a tag returned         |
 
 ## Screenshots
+<img src="screenshoot/screenshoot.jpg" alt="App Screenshot" width="400"/>
 
-![App Screenshot](screenshoot/screenshoot.jpg)
 
 
 ## 🚀  Follow
